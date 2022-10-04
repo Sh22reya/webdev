@@ -1,0 +1,101 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before and after pseudo selector</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&family=Cinzel:wght@500&family=Splash&display=swap" rel="stylesheet">
+    <style>
+        body {
+            color: black;
+            background-color: plum;
+            margin:0px;
+            padding:0px;
+            
+            
+        }
+        header::before{
+         
+                       
+             background-image: url('https://images.unsplash.com/photo-1590787996529-a542c86ca267?ixlib=rb-1.2.1&dl=hans-jurgen-mager-KgRKlQXmHR0-unsplash.jpg&w=1920&q=80&fm=jpg&crop=entropy&cs=tinysrgb'); 
+
+            background-image: url('https://images.unsplash.com/photo-1657036805524-e8c42ee2ddf2?ixlib=rb-1.2.1&dl=jakob-cotton-23_MVpd8lfY-unsplash.jpg&w=1920&q=80&fm=jpg&crop=entropy&cs=tinysrgb');
+
+            content:"";
+            position:absolute;
+            width:100%;
+            height:100%;
+            top:0;
+            left:0;
+            z-index: -1;
+            opacity:0.6;
+          
+            
+
+            
+
+        }
+        
+
+        section {
+            margin:3px 218px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height:344px;
+            justify-content: center;
+            
+            
+        }
+        /* section::before{
+            content:"this is content"
+        } */
+        .navigation{
+            display:flex;
+            font-size: 20px;
+            font-family:'Cinzel', serif;
+           
+            
+        }
+        li{
+            list-style: none;
+            padding:20px 23px;
+        }
+        h3{
+            font-size: 4rem;
+        }
+        p{
+            text-align: center;
+            color:black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+        <section>
+            <h3>welcome to coding world</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore ea illum, distinctio perferendis modi
+                temporibus, optio consequuntur aliquid maxime rem accusamus, quisquam fugiat itaque. Ipsam hic, rerum
+                cumque nam atque ea praesentium tenetur similique.</p>
+                
+        
+            
+        </section>
+        
+        <hr>
+   
+
+</body>
+
+</html>
